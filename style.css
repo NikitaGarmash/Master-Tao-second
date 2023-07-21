@@ -613,7 +613,7 @@ header .navbar-toggler-focus {
   max-width: 625px;
   width: 39vw;
   height: 98vh;
-  background: url(../assets/img/calculation-bg.png) left bottom/contain no-repeat;
+  background: url(assets/img/calculation-bg.png) left bottom/contain no-repeat;
 }
 
 .calculation-form {
@@ -863,7 +863,7 @@ section.advantages.container-fluid {
   max-width: 625px;
   width: 50%;
   height: 60vh;
-  background: url(../assets/img/notebook.png) left bottom/contain no-repeat;
+  background: url(assets/img/notebook.png) left bottom/contain no-repeat;
   margin-right: 85px;
 }
 
