@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#E58D35">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <title>MasterTao</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/fancybox.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+            <picture>
+              
+              <source media="(min-width:1025px)" srcset="assets/img/logo-lg.svg">
+              <img src="assets/img/logo-sm.svg" alt="Logo">
+            </picture>
+          </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Головна</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Магазин</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Про нас</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакти</a>
+                        </li>
+
+
+
+
+                    </ul>
+                    <button type="button" class="btn btn-primary">Оставить заявку</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="wrapper home">
+
+        <section class="first-screen container-xxl">
+
+            <div class="first-screen-slider">
+                <div style="background-image: url(assets/img/first-screen-1.jpg);">
+                    <div class="container">
+                        <div class="first-screen-title">Прямое КАРГО из Китая</div>
+                        <div class="first-screen-subtitle">Доставляем любые грузы по выгодной цене</div>
+                        <button type="button" class="btn btn-primary btn-lg">Расчитать стоимость<img src="assets/img/arrow-circle-left 1.svg" class="icon" alt="icon"></button>
+                    </div>
+                </div>
+
+                <div style="background-image: url(assets/img/first-screen-2.jpg);">
+                    <div class="container">
+                        <div class="first-screen-title">Выкуп товара с Таобао, 1688</div>
+                        <div class="first-screen-subtitle">Выкуп и доставка товара с китайских торговых площадок</div>
+                        <button type="button" class="btn btn-primary btn-lg">Расчитать стоимость<img src="assets/img/arrow-circle-left 1.svg" class="icon" alt="icon"></button>
+                    </div>
+                </div>
+
+                <div style="background-image: url(assets/img/first-screen-3.jpg);">
+                    <div class="container">
+                        <div class="first-screen-title">Экспрес авто доставка</div>
+                        <div class="first-screen-subtitle">Доставка автотранспортом из Китая в Украину от 15 дней, от $0,5/кг</div>
+                        <button type="button" class="btn btn-primary btn-lg">Расчитать стоимость<img src="assets/img/arrow-circle-left 1.svg" class="icon" alt="icon"></button>
+                    </div>
+                </div>
+
+                <div style="background-image: url(assets/img/first-screen-4.jpg);">
+                    <div class="container">
+                        <div class="first-screen-title">Прямое КАРГО из Китая</div>
+                        <div class="first-screen-subtitle">Доставляем любые грузы по выгодной цене</div>
+                        <button type="button" class="btn btn-primary btn-lg">Расчитать стоимость<img src="assets/img/arrow-circle-left 1.svg" class="icon" alt="icon"></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="arrows">
+
+            </div>
+
+        </section>
+
+        <section class="calculation">
+            <div class="container">
+                <div class="template-title col-lg-7">
+                    <h2>Получить расчет стоимости доставки вашего груза</h2>
+                </div>
+                <form class="calculation-form">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <div class="input-box">
+                                <label for="category-shipment">Категория товара:</label>
+                                <input type="text" id="category-shipment" name="category-shipment" placeholder="Категория товара">
+                            </div>
+
+                            <div class="input-box">
+                                <label for="weight-shipment">Вес груза (кг):</label>
+                                <input type="number" id="weight-shipment" name="weight-shipment" placeholder="Введите вес">
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="input-box">
+                                <label for="price-shipment">Стоимость груза:</label>
+                                <input type="number" id="price-shipment" name="price-shipment" placeholder="Введите стоимость">
+                            </div>
+
+                            <div class="input-box">
+                                <label for="volume-shipment">Объем груза (м3):</label>
+                                <input type="number" id="volume-shipment" name="volume-shipment" placeholder="Введите объем">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <div class="check-button">
+                                <input id="insurance" type="checkbox" name="insurance">
+                                <label for="insurance">Страховка</label>
+
+                            </div>
+
+                            <div class="check-button">
+                                <input id="customs-clearance" type="checkbox" name="customs-clearance">
+                                <label for="customs-clearance">Таможенное оформление</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-box">
+                                <label for="invoice-code">Код ТН ВЭД:</label>
+                                <input type="text" id="invoice-code" name="invoice-code" placeholder="Введите код">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="file-name">
+                                Имя вашего файла
+                            </div>
+                            <div class="file-row">
+                                <label for="fileInput" class="label-file">Загрузить фото товара</label>
+                                <input class="input-file" id="fileInput" name="fileInput" type="file">
+                                <div class="file-row-text">
+                                    Загрузить фото товара
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-primary btn-lg">Следующий шаг<img src="assets/img/arrow-circle-left 1.svg" class="icon" alt="icon"></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="advantages container-fluid">
+            <div class="container">
+                <div class="template-title">
+                    <h2>Почему стоит выбирать именно нас?</h2>
+                </div>
+                <div class="advantages-slider row">
+                    <div class="col-lg-3">
+
+                        <div class="advantage">
+
+                            <div class="advantage-img">
+
+                                <img src="/assets/img/advantage-1.svg" alt="advantage">
+
+                            </div>
+
+                            <h4 class="advantage-title">
+                        Таможенное оформление груза
+                    </h4>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="advantage">
+
+                            <div class="advantage-img">
+
+                                <img src="/assets/img/advantage-2.svg" alt="">
+
+                            </div>
+
+                            <h4 class="advantage-title">
+                        Таможенное оформление груза
+                    </h4>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="advantage">
+
+                            <div class="advantage-img">
+
+                                <img src="/assets/img/advantage-3.svg" alt="">
+
+                            </div>
+
+                            <h4 class="advantage-title">
+                        Таможенное оформление груза
+                    </h4>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="advantage">
+
+                            <div class="advantage-img">
+
+                                <img src="/assets/img/advantage-4.svg" alt="">
+
+                            </div>
+
+                            <h4 class="advantage-title">
+                        Таможенное оформление груза
+                    </h4>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="advantage">
+
+                            <div class="advantage-img">
+
+                                <img src="/assets/img/advantage-5.svg" alt="">
+
+                            </div>
+
+                            <h4 class="advantage-title">
+                        Таможенное оформление груза
+                    </h4>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="advantage">
+
+                            <div class="advantage-img">
+
+                                <img src="/assets/img/advantage-6.svg" alt="">
+
+                            </div>
+
+                            <h4 class="advantage-title">
+                        Таможенное оформление груза
+                    </h4>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="advantage">
+
+                            <div class="advantage-img">
+
+                                <img src="/assets/img/advantage-7.svg" alt="">
+
+                            </div>
+
+                            <h4 class="advantage-title">
+                        Таможенное оформление груза
+                    </h4>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="advantage">
+
+                            <div class="advantage-img">
+
+                                <img src="/assets/img/advantage-8.svg" alt="">
+
+                            </div>
+
+                            <h4 class="advantage-title">
+                        Таможенное оформление груза
+                    </h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="delivery">
+            <div class="container">
+                <div class="template-title">
+                    <h2>Варианты доставки грузов из Китая</h2>
+                </div>
+                <div class="slider-template">
+
+                    <div>
+                        <div class="slider-template-img-box">
+                            <img src="assets/img/delivery-1.png" class="img-fluid" alt="delivery">
+                        </div>
+
+                        <h4 class="slider-template-title">Авто - обычная</h4>
+                        <div class="slider-template-info">
+                            <div class="slider-template-info-day">9-15 дней</div>
+                            <div class="slider-template-info-weight">от 5 кг</div>
+                        </div>
+                        <div class="slider-template-price">
+                            <span>от</span>
+                            <strong>2.5</strong>
+                            <span>$/кг</span>
+                        </div>
+
+                        <div class="slider-template-btn-row">
+                            <button type="button" class="btn btn-primary">Оставить заявку</button>
+                            <button type="button" class="btn btn-secondary">Secondary</button>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="slider-template-img-box">
+                            <img src="assets/img/delivery-2.png" class="img-fluid" alt="delivery">
+                        </div>
+
+                        <h4 class="slider-template-title">Авто - обычная</h4>
+                        <div class="slider-template-info">
+                            <div class="slider-template-info-day">9-15 дней</div>
+                            <div class="slider-template-info-weight">от 5 кг</div>
+                        </div>
+                        <div class="slider-template-price">
+                            <span>от</span>
+                            <strong>2.5</strong>
+                            <span>$/кг</span>
+                        </div>
+
+                        <div class="slider-template-btn-row">
+                            <button type="button" class="btn btn-primary">Оставить заявку</button>
+                            <button type="button" class="btn btn-secondary">Secondary</button>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="slider-template-img-box">
+                            <img src="assets/img/delivery-3.png" class="img-fluid" alt="delivery">
+                        </div>
+
+                        <h4 class="slider-template-title">Авто - обычная</h4>
+                        <div class="slider-template-info">
+                            <div class="slider-template-info-day">9-15 дней</div>
+                            <div class="slider-template-info-weight">от 5 кг</div>
+                        </div>
+                        <div class="slider-template-price">
+                            <span>от</span>
+                            <strong>2.5</strong>
+                            <span>$/кг</span>
+                        </div>
+
+                        <div class="slider-template-btn-row">
+                            <button type="button" class="btn btn-primary">Оставить заявку</button>
+                            <button type="button" class="btn btn-secondary">Secondary</button>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="slider-template-img-box">
+                            <img src="assets/img/delivery-4.png" class="img-fluid" alt="delivery">
+                        </div>
+
+                        <h4 class="slider-template-title">Авто - обычная</h4>
+                        <div class="slider-template-info">
+                            <div class="slider-template-info-day">9-15 дней</div>
+                            <div class="slider-template-info-weight">от 5 кг</div>
+                        </div>
+                        <div class="slider-template-price">
+                            <span>от</span>
+                            <strong>2.5</strong>
+                            <span>$/кг</span>
+                        </div>
+
+                        <div class="slider-template-btn-row">
+                            <button type="button" class="btn btn-primary">Оставить заявку</button>
+                            <button type="button" class="btn btn-secondary">Secondary</button>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="slider-template-img-box">
+                            <img src="assets/img/delivery-5.png" class="img-fluid" alt="delivery">
+                        </div>
+
+                        <h4 class="slider-template-title">Авто - обычная</h4>
+                        <div class="slider-template-info">
+                            <div class="slider-template-info-day">9-15 дней</div>
+                            <div class="slider-template-info-weight">от 5 кг</div>
+                        </div>
+                        <div class="slider-template-price">
+                            <span>от</span>
+                            <strong>2.5</strong>
+                            <span>$/кг</span>
+                        </div>
+
+                        <div class="slider-template-btn-row">
+                            <button type="button" class="btn btn-primary">Оставить заявку</button>
+                            <button type="button" class="btn btn-secondary">Secondary</button>
+
+                        </div>
+                    </div>
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="services container-fluid">
+            <div class="container">
+                <div class="template-title">
+                    <h2>Варианты доставки грузов из Китая</h2>
+                </div>
+                <div class="slider-template">
+
+                    <div>
+                        <div class="slider-template-img-box">
+                            <img src="assets/img/delivery-1.png" class="img-fluid" alt="delivery">
+                        </div>
+
+                        <h4 class="slider-template-title">Авто - обычная</h4>
+                        <div class="slider-template-description">
+                            Компания - это полный комплекс логистических услуг по доставке грузов из Китая в
+                            Украину - сборные грузы и цельные товарные партии, услуги посредника ТаоБао, КАРГО Китай-Украина.
+                        </div>
+
+
+                        <div class="slider-template-btn-row">
+                            <button type="button" class="btn btn-secondary">Secondary</button>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="slider-template-img-box">
+                            <img src="assets/img/delivery-2.png" class="img-fluid" alt="delivery">
+                        </div>
+
+                        <h4 class="slider-template-title">Авто - обычная</h4>
+                        <div class="slider-template-description">
+                            Компания - это полный комплекс логистических услуг по доставке грузов из Китая в
+                            Украину - сборные грузы и цельные товарные партии, услуги посредника ТаоБао, КАРГО Китай-Украина.
+
+                        </div>
+
+
+                        <div class="slider-template-btn-row">
+
+                            <button type="button" class="btn btn-secondary">Secondary</button>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="slider-template-img-box">
+                            <img src="assets/img/delivery-3.png" class="img-fluid" alt="delivery">
+                        </div>
+
+                        <h4 class="slider-template-title">Авто - обычная</h4>
+                        <div class="slider-template-description">
+                            Компания - это полный комплекс логистических услуг по доставке грузов из Китая в
+                            Украину - сборные грузы и цельные товарные партии, услуги посредника ТаоБао, КАРГО Китай-Украина.
+
+                        </div>
+
+
+                        <div class="slider-template-btn-row">
+
+                            <button type="button" class="btn btn-secondary">Secondary</button>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="slider-template-img-box">
+                            <img src="assets/img/delivery-4.png" class="img-fluid" alt="delivery">
+                        </div>
+
+                        <h4 class="slider-template-title">Авто - обычная</h4>
+                        <div class="slider-template-description">
+                            Компания - это полный комплекс логистических услуг по доставке грузов из Китая в
+                            Украину - сборные грузы и цельные товарные партии, услуги посредника ТаоБао, КАРГО Китай-Украина.
+
+                        </div>
+
+
+                        <div class="slider-template-btn-row">
+
+                            <button type="button" class="btn btn-secondary">Secondary</button>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="slider-template-img-box">
+                            <img src="assets/img/delivery-5.png" class="img-fluid" alt="delivery">
+                        </div>
+
+                        <h4 class="slider-template-title">Авто - обычная</h4>
+                        <div class="slider-template-description">
+                            Компания - это полный комплекс логистических услуг по доставке грузов из Китая в
+                            Украину - сборные грузы и цельные товарные партии, услуги посредника ТаоБао, КАРГО Китай-Украина.
+
+                        </div>
+
+                        <div class="slider-template-btn-row">
+
+                            <button type="button" class="btn btn-secondary">Secondary</button>
+
+                        </div>
+                    </div>
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us">
+            <div class="container">
+                <div class="template-title">
+                    <h2>О компании</h2>
+                </div>
+
+                <div class="about-us-description">
+                    <span>
+                Компания Азия Карго - это полный комплекс логистических услуг по доставке грузов из Китая в Украину 
+                - сборные грузы и цельные товарные партии, услуги посредника ТаоБао, КАРГО Китай-Украину. Для вашего 
+                удобства есть тарифы на лёгкий и тяжелый куб. Мы работаем на рынке более 4 лет, а руководители компании 
+                занимаются логистикой уже более 11 лет.
+                <br>
+                Мы стремимся предоставить лучшие условия доставки и лучший сервис своим клиентам. Выбирая нас - вы 
+                выбираете качественную доставку оптимальную по цене и времени! Убедитесь в этом сами!
+            </span>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="q-and-a container">
+            <div class="container">
+                <div class="template-title">
+                    <h2>Часто задаваемые вопросы</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 questions">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Как рассчитывается стоимость доставки?
+                        </button>
+                      </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Как происходит оплата за доставку груза?
+                        </button>
+                      </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Как происходит оплата за доставку груза?
+                          </button>
+                        </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Можно ли через вас оплатить товар поставщику?
+                          </button>
+                        </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            В чём особенность КАРГО доставки из Китая
+                          </button>
+                        </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Какой срок доставки из Китая?
+                          </button>
+                        </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <form class="col-md-4 q-and-a-form">
+
+                        <div class="form-title">
+                            <h3>Остались вопросы?</h3>
+                        </div>
+
+                        <div class="form-description">
+                            Оставьте заявку и наш менеджер ответит вам в ближайшее время
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div class="input-box">
+
+                                    <input type="text" id="category-shipment" name="category-shipment" placeholder="Имя">
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-12">
+
+                                <div class="input-box">
+
+                                    <input type="number" id="price-shipment" name="price-shipment" placeholder="Телефон">
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-12">
+
+                                <div class="input-box">
+
+                                    <input type="text" id="price-shipment" name="price-shipment" placeholder="Email">
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-12">
+
+                                <div class="input-box">
+
+                                    <input type="text" id="price-shipment" name="price-shipment" placeholder="Ваш вопрос">
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="button" class="btn btn-primary btn-lg">Отправить вопрос<img src="assets/img/arrow-circle-left 1.svg" class="icon" alt="icon"></button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="are-you-ready container-fluid">
+            <div class="container">
+                <div class="template-title">
+                    <h2>Готовы к сотрудничеству?</h2>
+                    <h3>Зарегистрируйте груз!</h3>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            • Для того, чтобы начать сотрудничество, необходимо оформить груз указав информацию о содержимом груза, его стоимость и количество. А так-же прикрепив фотографии к заявке.
+                            <br>
+                            • Если требуется проверка товара на соответсвие количеству, то при оформлении груза на нашем сайте укажите это в графе "Примечание". Данная услуга платная и составляет 3 юаня за одну позицию в заказе. Любые дополнительные проверки груза обсуждаются индивидуально в том числе и их стоимость.
+                            <br>
+                            • До отправки груза на наш склад в Китае обязательно позаботьтесь о том, чтобы сделать маркировку, с номером Вашего заказа у нас на сайте, для каждой внешней коробки, чтобы мы смогли определить именно Ваш груз. Если у Вас нет возможности сделать это самостоятельно, то попросите об этом своего поставщика.
+
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="assets/img/ready-1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="assets/img/ready-2.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <p>• После отправки груза на наш склад в Китае, Вам обязательно нужно указать трек-номер для отслеживания посылок по Китаю для каждой позиции в заказе. Внести трек-номер можно на странице заказа. Трек-номер - это ещё одна мера для идентификации Вашего груза на нашем складе.
+                            <br>
+                            • Если Вы оформили груз по нашей инструкции и сделали все правильно, то при получении Вашего груза на складе в Китае статус заказа изменится на "На складе".
+                        </p>
+                        <div class="but">
+                            <button type="button" class="btn btn-primary btn-lg">Оформить груз<img src="assets/img/arrow-circle-left 1.svg" class="icon" alt="icon"></button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="container">
+            <hr class="line">
+        </div>
+
+
+
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="assets/img/logo-sm.svg" alt="Logo">
+                    <div class="f-text">
+                        <p>Lorpsum dolor sit.</p>
+                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Lorem ipsum dolor t.</p>
+                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Lorem ipsum door sit.</p>
+                    </div>
+
+                </div>
+                <div class="col-md-3 mobile-none">
+                    <h4>Грузоперевозки</h4>
+                    <div class="f-text">
+                        <p>Lorem ipslor sit.</p>
+                        <p>Lorem ipslor sit.</p>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mobile-none">
+                    <h4>Услуги</h4>
+                    <div class="f-text">
+                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Lorem ipsum dolor sit.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-3 mobile-none">
+                    <h4>Информация</h4>
+                    <div class="f-text">
+                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Lorem im dolor sit.</p>
+                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Lorem ipsum dor sit.</p>
+
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="markup.html" class="markup">markup</a>
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/fancybox.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
